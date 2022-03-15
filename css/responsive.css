@@ -1,5 +1,5 @@
 /*
-	Project: Gatrar Krupa Taxi Service
+	Project: Prime Cab
 	Responsive CSS File
 */
 
@@ -173,6 +173,12 @@
 		width:100%;
 		margin-left:0;
 	}
+	.contact_frm .frm-field .field-inner{
+		width:100%;
+	}
+	.contact_frm .field-inner #user_email-error{
+		margin-left:0;
+	}
 	/* End Homepage 3 Styles*/
 	
 	/* Booking Form 3 Styles */
@@ -230,6 +236,17 @@
 
 @media(min-width:768px) and (max-width:991px){
 	
+	/*Ride Booking Form Fixes*/
+	#trip_cost{
+		font-size:16px;
+	}
+	.booking-summary .total-outer .curr{
+		right:68%;
+	}
+	.price_btn{
+		font-size: 12px;
+		padding: 12px 12px;
+	}
 	/* Header Styles */
 	.phone_info{
 		display:none;
@@ -660,7 +677,13 @@
 		padding: 6px 0;
 		font-size: 12px;
 	}
-	
+	.booking-summary {
+		margin-top: 50px;
+	}
+	.booking-summary .service-info{
+		float:none;
+		clear:both;
+	}
 }
 
 @media(max-width:767px){
@@ -885,6 +908,13 @@
 	.tj-booking-frm .tj-tabs .nav-tabs > li{
 		float:none;
 		margin-bottom:0;
+	}
+	.booking-frm .ride-terms {
+		width: 96%;
+	}
+	.booking-summary .service-info{
+		float:none;
+		clear:both;
 	}
 	.tj-tabs .nav > li > a{
 		margin-right:0;
@@ -1267,6 +1297,12 @@
 		width:100%;
 		margin-left: 0;
 	}
+	.contact_frm .frm-field .field-inner{
+		width:100%;
+	}
+	.contact_frm .field-inner #user_email-error{
+		margin-left:0;
+	}
 	.tj-footer2 .payment-icons,.tj-footer2 .fsocial-links{
 		text-align:center;
 		margin-bottom:15px;
@@ -1339,6 +1375,9 @@
 		width:100%;
 		height:auto;
 	}
+	.blog-outer .blog-thumb .thumb-inner a{
+		font-size:40px;
+	}
 	/* End Blog Styles */
 	
 	/* Blog Detail Styles */
@@ -1407,12 +1446,22 @@
 	}
 	/* End Footer Styles */
 	
-	.blog-outer .blog-thumb .thumb-inner a{
-		font-size:48px;
+	.invoice-content{
+		padding-right:20px;
+		padding-left:20px;
 	}
-	.blog-outer .blog-thumb .thumb-inner{
-		top:35%;
+	.invoice-outer .invoice-title h3{
+		float:none;
+		margin-top: 0;
+		display:block;
 	}
+	.payment-info strong{
+		font-size:13px;
+	}
+	.payment-info .user-invoice-info{
+		float:none;
+	}
+	
 }
 
 /* Responsive CSS For Gallery Carousel */
@@ -1425,5 +1474,9 @@
 		display: block;
 	}
 }
-
-		
+/* Responsive CSS Fix For Booking Form Terms */
+@media ( min-width:320px ) and ( max-width:480px ){
+	.booking-frm .ride-terms {
+		width: 93%;
+	}
+}

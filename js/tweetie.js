@@ -106,15 +106,14 @@
                     var temp_data = {
                         user_name: tweet.user.name,
                         date: dating(tweet.created_at),
-                        tweet: (tweet.retweeted) ? linking(tweet.text) : linking(tweet.text),
+                        tweet: (tweet.retweeted) ? linking('@'+ tweet.user.screen_name +': '+ tweet.text) : linking(tweet.text),
                         avatar: '<img src="'+ tweet.user.profile_image_url +'" />',
                         url: 'https://twitter.com/' + tweet.user.screen_name + '/status/' + tweet.id_str,
                         retweeted: tweet.retweeted,
                         screen_name: linking('@'+ tweet.user.screen_name)
-                       
                     };
 
-                    that.find('ul').append('<li><i class="fab fa-twitter"></i><div class="tweet_text">' + templating(temp_data) + '</div></li>');
+                    that.find('ul').append('<li>' + templating(temp_data) + '</li>');
                 }
 
                 if (typeof callback === 'function') { callback(); }

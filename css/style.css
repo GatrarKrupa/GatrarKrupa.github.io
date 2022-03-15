@@ -1,6 +1,6 @@
 /** 
-Project: Gatrar Krupa Taxi Service
-Version: 1.0
+Project: Prime Cab
+Version: 1.01
 Author: ThemesJungle
 Primary use: taxi booking, taxi service,taxi cabs,car rental,online taxi,taxi
 
@@ -31,14 +31,15 @@ Table of Content For Page Sections CSS
 22. User Account/Cancel Booking
 23. Contact Us
 24. Widgets
-	
+25. Policy
+
 (Typography And Color Codes)
 
 font-family: 'Open Sans', sans-serif;
 headings font-family: 'Montserrat', sans-serif;
-text: #777777 
-hover: #dd3751   / #0a5bc6
-headings: #444444 /#272735
+text: #777777
+hover: #0022e6
+headings: #444444
 
 End of Table of Content Css End **/
 
@@ -55,11 +56,18 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
 	font-family:'Montserrat', sans-serif;
+	color:#444444;
+	font-weight:600;
 }
 .tj-wrapper{
 	width:100%;
 	float:left;
 	overflow:hidden;
+}
+.tj-wrapper p{
+	color:#777;
+	line-height: 24px;
+	font-weight: 400;
 }
 /* 00. Header */
 .tj-header{
@@ -179,7 +187,7 @@ h1,h2,h3,h4,h5,h6{
 .address-box a:hover,.address-box a:focus,.contact-box li a:hover,.contact-box li a:focus,
 .tj-accordion-holder .panel-title a:hover,.tj-accordion-holder .panel-title a:focus,
 .breadcrumb-list li a:hover,.breadcrumb-list li a:focus,.book_fleet a:hover,.book_fleet a:focus,.post-nav .prev_link a,.post-nav .next_link a,.fleet-info-box  a,.fleet-list-box a,
-.slide-caption .slide-btns .btn-style-1,.slide-caption .slide-btns .btn-style-2,.tj-promo-offer a,.tj-cal-to-action2 .cta-btn a,.banner-caption .banner-inner .banner-btns .btn-style-1, .banner-caption .banner-inner .banner-btns .btn-style-2,.service-box  .service-caption a,.fleet-inner a,.cab-filter-nav a,.success-msg a,.tj-user-bfrm .cb-frm .back-btn, .payment-frm .back-btn,.cab-box .cab-desc a:hover,.blog-outer .blog-thumb .thumb-inner a, .tags a, .recent-news ul li .detail-box h4 a, ul.cats li a,.blog-text .tj-btn2,.post-nav-control a,.comments-info .reply{
+.slide-caption .slide-btns .btn-style-1,.slide-caption .slide-btns .btn-style-2,.tj-promo-offer a,.tj-cal-to-action2 .cta-btn a,.banner-caption .banner-inner .banner-btns .btn-style-1, .banner-caption .banner-inner .banner-btns .btn-style-2,.service-box  .service-caption a,.fleet-inner a,.cab-filter-nav a,.invoice-footer a,.tj-user-bfrm .cb-frm .back-btn, .payment-frm .back-btn,.cab-box .cab-desc a:hover,.blog-outer .blog-thumb .thumb-inner a, .tags a, .recent-news ul li .detail-box h4 a, ul.cats li a,.blog-text .tj-btn2,.post-nav-control a,.comments-info .reply{
 	text-decoration:none;
 }
 
@@ -356,7 +364,7 @@ h1,h2,h3,h4,h5,h6{
 .tj-inner-banner {
     float: left;
     width: 100%;
-    background: url('../images/inner-banner.jpg') top center no-repeat;
+    background: url('../images/inner-banner.png') top center no-repeat;
     background-size: cover;
     text-align: center;
 	position:relative;
@@ -416,7 +424,7 @@ h1,h2,h3,h4,h5,h6{
 .tj-banner-form{
 	float:left;
 	width:100%;
-	background:url("../images/banner1_bg.jpg") no-repeat;
+	background:url("../images/banner1_bg.png") no-repeat;
 	background-size:cover;
 	padding:195px 0;
 	position:relative;
@@ -548,7 +556,7 @@ h1,h2,h3,h4,h5,h6{
 	float:left;
 	width:100%;
 	padding:110px 0 80px;
-	background:url("../images/deals-bg.jpg") no-repeat center center;
+	background:url("../images/deals-bg.png") no-repeat center center;
 	background-size:cover;
 	position:relative;
 }
@@ -644,7 +652,7 @@ h1,h2,h3,h4,h5,h6{
 .tj-cal-to-action2{
 	float:left;
 	width:100%;
-	background:url("../images/cta-bg2.jpg")no-repeat center center;
+	background:url("../images/cta-bg2.png")no-repeat center center;
 	background-size:cover;
 	position:relative;
 	padding:70px 0;
@@ -738,7 +746,7 @@ h1,h2,h3,h4,h5,h6{
 	width:100%;
 	float:left;
 	padding:130px 0 140px;
-	background:url("../images/fleet-carousel-bg.jpg") no-repeat center center;
+	background:url("../images/carbackhero.png") no-repeat center center;
 	background-size:cover;
 	position:relative;
 	overflow:hidden;
@@ -1176,7 +1184,7 @@ h1,h2,h3,h4,h5,h6{
 .tj-promo-offer{
 	width:100%;
 	float:left;
-	background:url("../images/promo-bg.jpg") no-repeat center center;
+	background:url("../images/carbackhero.png") no-repeat center center;
 	background-size:cover;
 	padding:80px 0;
 	position:relative;
@@ -1693,8 +1701,6 @@ h1,h2,h3,h4,h5,h6{
 }
 /* End Blog CSS Styles */
 
-/* End Homepage 2 Styles */
-
 /* 15. Blog List */
 .blog-list{
 	width:100%;
@@ -1880,11 +1886,11 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     z-index: -1;
     left: 0;
-    top:-30px;
+	top:-30px;
     font-size: 80px;
-    font-weight:600;
+	font-weight:600;
     color: #ececec;
-    font-style:italic;
+	font-style:italic;
 }
 
 /* End Blog List CSS Styles */
@@ -2119,13 +2125,13 @@ h1,h2,h3,h4,h5,h6{
 
 /* End Blog Detail CSS Styles */
 
-
+/* End Homepage 2 Styles */
 
 /* 09. Homepage 3 */
 .tj-banner{
 	float:left;
 	width:100%;
-	background:url("../images/banner2_bg.jpg") no-repeat;
+	background:url("../images/banner2_bg.png") no-repeat;
 	background-size:cover;
 	padding:255px 0;
 	position:relative;
@@ -2337,9 +2343,19 @@ h1,h2,h3,h4,h5,h6{
 	width: 100%;
 	margin-bottom:10px;
 }
+.contact_frm .frm-field .field-inner{
+	width:245px;
+	float:left;
+}
+.contact_frm .frm-field label{
+	margin-top:5px;
+}
+.contact_frm .field-inner #user_email-error{
+	margin-left:11px;
+}
 .contact_frm .frm-field input[type="text"]{
 	display:inline-block;
-	width:243px;
+	width:245px;
 	height:45px;
 	padding:0 16px;
 	border-radius:5px;
@@ -2351,7 +2367,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .contact_frm .frm-field input[type="email"]{
 	display:inline-block;
-	width:243px;
+	width:245px;
 	height:45px;
 	padding:0 16px;
 	border-radius:5px;
@@ -2359,9 +2375,9 @@ h1,h2,h3,h4,h5,h6{
 	font-size:14px;
 	line-height:24px;
 	color:#a6a6a6;
-	margin-left:5px;
+	margin-left:11px;
 }
-.contact_frm .frm-field textarea{
+.form-box .contact_frm .frm-field textarea{
 	height:100px;
 	resize:none;
 	font-size:14px;
@@ -2489,7 +2505,7 @@ h1,h2,h3,h4,h5,h6{
 	float:left;
 	width:100%;
 	padding:64px 0 34px;
-	background:url("../images/facts-bg.jpg")no-repeat;
+	background:url("../images/facts-bg.png")no-repeat;
 	background-size:cover;
 	position:relative;
 }
@@ -2735,7 +2751,7 @@ h1,h2,h3,h4,h5,h6{
 .tj-clients{
 	width:100%;
 	float:left;
-	background:url("../images/clients-bg.jpg") no-repeat center center;
+	background:url("../images/clients-bg.png") no-repeat center center;
 	padding:55px 0;
 	background-size:cover;
 	position:relative;
@@ -3874,7 +3890,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .reg-frm  .reg-btn,.login-frm  .reg-btn{
 	margin-bottom:20px;
-	background:#dd3751;
+	background:#0022e6;
 }
 .reg-frm  .facebook-btn,.login-frm  .facebook-btn{
 	margin-bottom:10px;
@@ -4213,7 +4229,7 @@ h1,h2,h3,h4,h5,h6{
 	display:block;
 }
 .booking-summary .fare-box{
-	width:245px;
+	width:280px;
 	text-align:center;
 	background-color:#fff;
 	margin:0 40px 35px 40px;
@@ -4224,12 +4240,12 @@ h1,h2,h3,h4,h5,h6{
 	font-size:18px;
 	line-height:32px;
 	text-transform:capitalize;
-	color: #444;
+	color:#444;
 }
-.booking-summary .fare-box strong span{
+.booking-summary .fare-box span{
 	font-size:18px;
 	line-height:32px;
-	display:inline-block;
+	display:block;
 }
 .booking-summary .fare-box span{
 	display:block;
@@ -4375,14 +4391,7 @@ h1,h2,h3,h4,h5,h6{
 	line-height:24px;
 	font-weight:400;
 }
-.success-msg a{
-	display:block;
-	width:190px;
-	color:#fff;
-	text-align:center;
-	padding:15px 0;
-	margin: 25px auto 0;
-}
+
 
 /* End Payment, Confirm Booking, Confirm Payment CSS Styles */
 
@@ -4631,16 +4640,22 @@ h1,h2,h3,h4,h5,h6{
 	font-weight:600;
 	margin-top:15px;
 }
-.tj-contact-form .inner-holder  .error{
+.tj-contact-form .inner-holder  .error,
+.contact_frm .frm-field .error{
 	color:#e74c3c;
 }
-.tj-contact-form button.success {
+.tj-contact-form button.success,
+.contact_frm button.success,
+.cb-frm button.success{
     background-color: #669e4a;
 }
-.tj-contact-form button.fail{
+.tj-contact-form button.fail,
+.contact_frm button.fail,.cb-frm button.fail{
 	background-color:#e74c3c;
 }
-.tj-contact-form button.wait{
+.tj-contact-form button.wait,
+.contact_frm button.wait,
+.cb-frm button.wait{
 	cursor: wait;
 }
 .address-box{
@@ -4682,7 +4697,7 @@ h1,h2,h3,h4,h5,h6{
 .tj-cal-to-action{
 	width:100%;
 	float:left;
-	background:url("../images/cta-bg.jpg") no-repeat center center;
+	background:url("../images/cta-bg.png") no-repeat center center;
 	padding:50px 0 20px;
 	position:relative;
 }
@@ -4871,13 +4886,14 @@ h1,h2,h3,h4,h5,h6{
 .news-box figure:hover:after,.tj-book-services .service-box:hover,
 .tj-book-services .service-box,.news-outer figure:hover:after,.cab-services .cab-service-box:hover,.cab-services .cab-service-box:hover:after,.cab-services .cab-service-box,.tj-cab-filter .isotope,.tj-cab-filter .isotope .isotope-item,
 .partner-item img:hover,.cab-service-box .service-thumb:hover img,.cab-service-box .service-thumb img,.news-box figure:hover img,.news-outer figure:hover img,.news-box figure img,.news-outer figure img,.tj-btn:hover:after,.tj-btn,.deal-box .deal-thumb:hover:after,
-.fleet-grid-box .fleet-thumb:hover img,.fleet-grid-box .fleet-thumb img,.fleet-list-box .fleet-thumb img,.fleet-list-box .fleet-thumb:hover img,.cab-services .cab-service-box:after,.tj-header .sticky,.tj-header .tj-nav-row,.cab-box figure:hover img,.cab-box figure img,.gallery .slick-prev,.gallery .slick-next,.gallery-carousel .gallery:hover .slick-prev,.gallery-carousel .gallery:hover .slick-next,.cab-col-outer .fleet-grid-box .tj-btn2:before,.cab-col-outer .fleet-grid-box .tj-btn2:after,.tj-nav-holder .navbar-nav li ul li:hover ul,.tj-nav-holder .navbar-default .navbar-nav > li > a:hover,.cab-box .cab-desc a:after,.cab-box .cab-desc a:hover:after,.blog-outer .blog-thumb:hover img,.blog-outer .blog-thumb img,.blog-text .tj-btn2:hover:after,.blog-text .tj-btn2:hover:before{
+.fleet-grid-box .fleet-thumb:hover img,.fleet-grid-box .fleet-thumb img,.fleet-list-box .fleet-thumb img,.fleet-list-box .fleet-thumb:hover img,.cab-services .cab-service-box:after,.tj-header .sticky,.tj-header .tj-nav-row,.cab-box figure:hover img,.cab-box figure img,.gallery .slick-prev,.gallery .slick-next,.gallery-carousel .gallery:hover .slick-prev,.gallery-carousel .gallery:hover .slick-next,.cab-col-outer .fleet-grid-box .tj-btn2:before,.cab-col-outer .fleet-grid-box .tj-btn2:after,.tj-nav-holder .navbar-nav li ul li:hover ul,.cab-box .cab-desc a:after,.cab-box .cab-desc a:hover:after,.blog-outer .blog-thumb:hover img,.blog-outer .blog-thumb img,.blog-text .tj-btn2:hover:after,.blog-text .tj-btn2:hover:before{
 	-webkit-transition: all .4s ease-out;
 	-moz-transition: all .4s ease-out;
 	-ms-transition: all .4s ease-out;
 	-o-transition: all .4s ease-out;
 	transition: all .4s ease-out;
 }
+
 
 /* 23. Widgets */
 .tj-sidebar-outer h3 {
@@ -4889,7 +4905,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .search_widget h3:before,.fleet-ad h3:before,
 .tagCloud h3:before,.recent-post h3:before,
-.categroies h3:before{
+.categroies h3:before,.widget-subcribe h3:before{
     content: '';
     position: absolute;
     top: 5px;
@@ -4897,7 +4913,29 @@ h1,h2,h3,h4,h5,h6{
     border-left: 4px solid;
     height: 15px;
 }
-.search_widget,.fleet-ad,.tagCloud,.recent-post,.categroies{
+.tj-footer .widget-subcribe h3:before{
+	display:none;
+}
+.tj-subscribe-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.tj-subscribe-form label strong {
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 14px;
+}
+.tj-subscribe-form label strong a {
+    color: #777;
+    font-family: 'Open Sans',sans-serif;
+    display: block;
+}
+.tj-footer .tj-subscribe-form label strong a{
+	color:#7a8793
+}
+.search_widget,.fleet-ad,.tagCloud,.recent-post,.categroies,.mailchimp{
 	position:relative;
 }
 .search-form {
@@ -4919,7 +4957,36 @@ h1,h2,h3,h4,h5,h6{
     border: none;
     padding: 11px 18px;
     display: block;
-    background: #dd3751;
+    background: #0022e6;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 15px 0;
+}
+.tj-subscribe-form {
+    width: 100%;
+    float: left;
+	position:relative;
+}
+.tj-subscribe-form .inner-holder{
+	width: 100%;
+    float: left;
+}
+.tj-subscribe-form input[type="email"]{
+	width: 100%;
+    border: 1px solid #e8e8e8;
+    padding: 8px 14px;
+    display: block;
+    color: #a6a6a6;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 20px;
+}
+.tj-subscribe-form .btn-submit{
+	border: none;
+    padding: 11px 18px;
+    display: block;
     color: #fff;
     position: absolute;
     top: 0;
@@ -4987,4 +5054,296 @@ ul.cats li a {
     color: #777;
     float: left;
 	font-weight:500;
+}
+/* 25. Policy */
+.tj-policy-section{
+	width:100%;
+	float:left;
+	padding:130px 0;
+}
+.tj-policy-section p{
+	font-weight:500;
+	margin-bottom:20px;
+}
+.tab-content .booking-frm .error ,#confirm_booking .cb-frm .error{
+    font-weight: 500;
+    color: #e74c3c;
+    display: block;
+    font-family: 'Montserrat',sans-serif;
+}
+.booking-frm .ride-terms {
+    float: right;
+    width: 96%;
+}
+.service-info .info-outer,.booking-info .service_type,
+.booking-info  .book-ref,.booking-info .ride_car{
+	display:inline-block;
+}
+.tj-user-bfrm .cb-frm .info-field input[type="text"],
+.tj-user-bfrm .cb-frm .info-field input[type="email"],
+.tj-user-bfrm .cb-frm .info-field input[type="tel"]{
+	margin-bottom:15px;
+}
+.booking-frm .select-list{
+    font-size: 14px;
+    line-height: 24px;
+    color: #a6a6a6;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+	display:none;
+}
+.booking-frm .car-list{
+    font-size: 14px;
+    line-height: 24px;
+    color: #a6a6a6;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.booking-frm .selectpicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px 18px;
+}
+.booking-frm .select-list:after,
+.booking-frm .car-list:after {
+    content: '\f107';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-weight: 600;
+    font-family: 'Font Awesome 5 Free';
+}
+.booking-frm label[for="pay_offline"], .booking-frm label[for="pay_online"]{
+	margin-bottom:15px;
+	margin-right:45px;
+	display: inline-block;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: #444444;
+	text-transform: capitalize;
+}
+#trip_cost {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.total-outer {
+    position: relative;
+	width:100%;
+}
+.booking-summary .total-outer .curr {
+    position: absolute;
+    top: 0;
+    right: 62%;
+    right: 62%;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+.invoice-content {
+    background-color: #fafafa;
+	padding: 20px 30px 50px 30px;
+	border: 1px solid #ececec;
+	width:100%;
+	float:left;
+}
+.invoice-outer{
+	width:100%;
+	float:left;
+}
+.invoice-outer .invoice-title h2,
+.invoice-outer .invoice-title h3{
+	display: inline-block;
+}
+.invoice-title h3{
+	float:right;
+}
+.payment-info .user-invoice-info{
+	float:right;
+}
+.payment-info strong {
+    display: block;
+    color: #444;
+    line-height: 22px;
+	font-weight: 600;
+}
+.payment-info span {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #777;
+}
+.invoice-outer .payment-info {
+	border-bottom: 1px solid #e8e8e8;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.invoice-outer .line-items{
+	width: 100%;
+	margin-top:40px;
+}
+.invoice-header {
+    border: 1px solid #e8e8e8;
+    padding: 4px 12px;
+	width: 100%;
+}
+.items .invoice-item {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 0;
+}
+.items .invoice-item span {
+    line-height: 25px;
+    display: block;
+	font-weight: 500;
+	font-size: 14px;
+}
+.invoice-footer {
+    float: left;
+    width: 100%;
+}
+.invoice-footer a{
+	display:block;
+	width:160px;
+	color:#fff;
+	text-align:center;
+	padding:15px 0;
+	margin: 25px auto 0;
+}
+.ride-note {
+    margin-top: 20px;
+    display: block;
+    font-weight: 600;
+    color: #444;
+    line-height: 22px;
+}
+.invoice-error{
+	text-align: center;
+	display: block;
+	font-size: 18px;
+	color: #e74c3c;
+	line-height: 26px;
+	font-family: 'Montserrat',sans-serif;
+	margin-top: 30px;
+}
+
+.ride_price_breakdown .modal{
+	top: 60px;
+}
+.ride_price_breakdown .modal-header{
+	border-bottom:none;
+	background-color:#1c2b39;
+	border-radius: 20px 20px 0 0;
+}
+.ride_price_breakdown .modal-header .modal-title{
+	color:#fff;
+}
+#ride_pricing_popup  .modal-content{
+	border-radius: 20px;
+}
+.ride_price_breakdown .modal-header .close {
+    margin-top: 0;
+    opacity: 1;
+    color: #fff;
+	background-color: #444;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.ride_price_breakdown .modal-header .close:hover {
+    border-radius: 0;
+    transition: all 0.4s ease-out;
+}
+.price_btn {
+    border: none;
+    padding: 12px 15px;
+    color: #fff;
+    margin: 10px 0 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+}
+.booking-summary .ride-time span {
+    font-size: 14px;
+    display: inline-block;
+    color: #444;
+    font-weight: 600;
+    text-align: center;
+}
+.booking-summary .ride-time strong {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.order-summary ul {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+.order-summary ul li {
+    border-bottom: 2px solid #eee;
+    padding: 8px 0;
+	color:#444;
+	font-weight: 600;
+}
+.booking-summary .order-summary ul li span {
+    float: right;
+    font-size: 15px;
+    font-weight: 600;
+}
+.booking-summary  .ride-total{
+	width:100%;
+	padding:5px 10px;
+	text-align:left;
+}
+.booking-summary  .ride-total span{
+	float:right;
+	font-weight:600;
+	font-size:16px;
+}
+#ride_pricing_popup .modal-footer{
+	background-color: #1c2b39;
+	border-radius: 0 0 20px 20px;
+	padding: 10px 0;
+	text-align:center;
+}
+#ride_pricing_popup .modal-footer h4{
+	color:#fff;
+}
+.booking-msg .email-msg {
+    color: green;
+    margin-top: 5px;
+    display: block;
+}
+.clear{
+	clear:both;
 }
