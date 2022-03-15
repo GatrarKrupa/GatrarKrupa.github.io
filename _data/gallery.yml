@@ -1,4 +1,47 @@
 slider:
-- image_path: assets/PHOTOS/Products_Asset/Electrical_Asset/Commercial Light/solarflood.png
-  image_title: Solar Flood Lights
-  image_title: assets/PHOTOS/Products_Asset/Electrical_Asset/Commercial Light/Lists/SOLARFLOOD.png
+- image_path:  images/slider_img1.jpg
+  image_title: So, where are you going to travel today !!!
+  image_desc: Travel Whole india & enjoy several famous
+- image_path:  images/slider_img4.jpg
+  image_title: Keeping You And Your Family Safe!
+  image_desc: The Affordable Way To Keep You <br> Connected To Life
+- image_path:  images/slider_img3.jpg
+  image_title: Rent A Better Car For Less Money!
+  image_desc: Better prices, a wider range of cars and more locations
+ 
+ 
+secure:
+- image_path:  images/rupee.png
+  image_title: Best Price Guaranteed
+  image_desc: The price is cheapers then other.
+- image_path:  images/driver.png
+  image_title: Professionally trained Drivers
+  image_desc: Our driver's are fully experienced and well manner's
+- image_path:  images/support.png
+  image_title: 24/7 Customer Service
+  image_desc: No matter what time of day or night you ride with us.
+
+cars:
+- image_path:  images/welcome-img.png
+  image_title: Toyota Etios
+  image_seats: 4 Seaters
+  image_km: ₹10<span> / km</span>
+- image_path:  images/swiftdezire.png
+  image_title: Maruti Suzuki Swift Dzire
+  image_seats: 4 Seaters
+  image_km: ₹10<span> / km</span>
+- image_path:  images/ertiga.png
+  image_title: Maruti Suzuki ertiga
+  image_seats: 7 Seaters
+  image_km: ₹12<span> / km</span>
+
+feed:
+- image_path:  images/noimage.jpg
+  image_title: Parbat
+  image_desc: Great Service, great driver would recommend and definietely use again
+- image_path:  images/noimage.jpg
+  image_title: Amin Sati
+  image_desc: Service is very good! Thanks
+- image_path:  images/noimage.jpg
+  image_title: Anthony
+  image_desc: Car is nice! Driver is very helpful! Awesome Taxi Service Thanks!! Gatrar Krupa

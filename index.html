@@ -1,107 +1,50 @@
 --- 
 layout: default
----
+--- 
+
  			<!--Slider Section Start-->
 <div class="tj-slider">
 				<div class="tj-cab-slider" id="cab-slider">
 					<!--Slider Item Content Start-->
-					<div class="slide-item">
-						<img src="images/slider_img1.jpg" width="1920" height="900" alt=""/>
+                    {% for image in site.data.gallery.slider %}
+                    <div class="slide-item">
+						<img src="{{ image.image_path }}" width="1920" height="900" alt=""/>
 						<div class="slide-caption">
 							<div class="container">
 								<div class="slide-inner">
-									<strong>So, where are you going to travel today !!!</strong>
-									<h2>Travel Whole india & enjoy several famous <br/> road trip destinations</h2>
+									<strong>{{ image.image_title }}</strong>
+									<h2>{{ image.image_desc }}</h2>
 									<div class="slide-btns">
-										<a href="G_Aboutus.html" class="btn-style-2">About us <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+										<a href="G_About.html" class="btn-style-2">About us <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 										<a href="G_Contact.html" class="btn-style-1">Book Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!--Slider Item Content End-->
-					<!--Slider Item Content Start-->
-					<div class="slide-item">
-						<img src="images/slider_img4.jpg" width="1920" height="900" alt=""/>
-						<div class="slide-caption">
-							<div class="container">
-								<div class="slide-inner">
-									<strong>Keeping You And Your Family Safe!</strong>
-									<h2>The Affordable Way To Keep You <br> Connected To Life</h2>
-									<div class="slide-btns">
-										<a href="G_Aboutus.html" class="btn-style-2">About us <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-										<a href="G_Contact.html" class="btn-style-1">Book Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--Slider Item Content End-->
-					<!--Slider Item Content Start-->
-					<div class="slide-item">
-						<img src="images/slider_img3.jpg" width="1920" height="900" alt=""/>
-						<div class="slide-caption">
-							<div class="container">
-								<div class="slide-inner">
-									<strong>Rent A Better Car For Less Money!</strong>
-									<h2>Better prices, a wider range of cars and more locations</h2>
-									<div class="slide-btns">
-										<a href="G_Aboutus.html" class="btn-style-2">About us <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-										<a href="G_Contact.html" class="btn-style-1">Book Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--Slider Item Content End-->
+
+                    {% endfor %}
+				
 				</div>
 </div>
-			<!--Slider Section End-->
+		
 			
 <section class="tj-offers">
 				<div class="row">
-					<!--Offer Box Content Start-->
-					
-					<!--Offer Box Content End-->
-					
-					<!--Offer Box Content Start-->
-					<div class="col-md-4 col-sm-6">
-						<div class="offer-box">
-							<img src="images/rupee.png" alt=""/>
+				
+                    {% for image in site.data.gallery.secure %}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="offer-box">
+							<img src="{{ image.image_path }}" alt=""/>
 							<div class="offer-info">
-								<h4>Best Price Guaranteed</h4>
-								<p>The price is cheapers then other.</p>
+								<h3>{{ image.image_title }}</h3>
+                                <h4>	{{ image.image_desc }}</h4>
 							</div>
 						</div>
-					</div>
-			
-					<div class="col-md-4 col-sm-6">
-						<div class="offer-box">
-							<img src="images/driver.png" alt=""/>
-							<div class="offer-info">
-								<h4>Professionally
-									trained Drivers</h4>
-								<p>Our driver's are fully experienced and well manner's</p>
-							</div>
-						</div>
-					</div>
-					<!--Offer Box Content End-->
-					<!--Offer Box Content Start-->
-					<div class="col-md-4 col-sm-6">
-						<div class="offer-box">
-							<img src="images/support.png" alt=""/>
-							<div class="offer-info">
-								<h4>24/7 Customer Service</h4>
-								<p>No matter what
-									time of day or night
-									you ride with us.</p>
-							</div>
-						</div>
-					</div>
-			
-					
-					<!--Offer Box Content End-->
+                       
+                    </div>
+                    {% endfor %}
+				
 				</div>
 </section>
 
@@ -113,12 +56,12 @@ layout: default
             <div class="col-md-6 col-sm-7">
                 <div class="about-info">
                     <div class="tj-heading-style">
-                        <h3>Who We Are</h3>
+                        <h2>Who We Are</h2>
                     </div>
-                    <p>Today, <b>GATRAR KRUPA</b> is well-recognized as one of the most trusted Taxi Service not only in Porbandar district but much beyond it with wide customer base beyond India. It has been more than 11 years of journey
+                    <p style="font-size:22px">Today, <b>GATRAR KRUPA</b> is well-recognized as one of the most trusted Taxi Service not only in Porbandar district but much beyond it with wide customer base beyond India. It has been more than 11 years of journey
 						
 						We are Providing Reliable and comfortable travel solutions without the premium price tag.
-						</p>
+                    </p>
                     <a href="Aboutus.html">About Us<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                     <ul class="facts-list">
                         <li>
@@ -161,51 +104,22 @@ layout: default
     </div>
     <div class="carousel-outer">
         <div class="cab-carousel" id="cab-carousel">
-            
+            {% for image in site.data.gallery.cars %}
 			<div class="fleet-item">
-                <img src="images/welcome-img.png" alt=""/>
+                <img src="{{ image.image_path }}" alt=""/>
                 <div class="fleet-inner">
-                    <h4>Toyota Etios</h4>
+                    <h4>{{ image.image_title }}</h4>
                     <ul>
                         <li><i class="fas fa-taxi"></i>Luxury</li>
-                        <li><i class="fas fa-user-circle"></i>4 Seaters</li>
+                        <li><i class="fas fa-user-circle"></i>{{ image.image_seats }}</li>
                         
                     </ul>
-                    <strong class="price">₹10<span> / km</span></strong>
+                    <strong class="price">{{ image.image_km }}</strong>
                     <a href="G_G_Contact">Book Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                 </div>
             </div>
-
-
-			<div class="fleet-item">
-                <img src="images/swiftdezire.png" alt=""/>
-                <div class="fleet-inner">
-                    <h4>Maruti Suzuki Swift Dzire</h4>
-                    <ul>
-                        <li><i class="fas fa-taxi"></i>Luxury</li>
-                        <li><i class="fas fa-user-circle"></i>4 Seaters</li>
-                        
-                    </ul>
-                    <strong class="price">₹10<span> / km</span></strong>
-                    <a href="G_Contact">Book Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-			<div class="fleet-item">
-                <img src="images/ertiga.png" alt=""/>
-                <div class="fleet-inner">
-                    <h4>Maruti Suzuki ertiga</h4>
-                    <ul>
-                        <li><i class="fas fa-taxi"></i>Luxury</li>
-                        <li><i class="fas fa-user-circle"></i>7 Seaters</li>
-                        
-                    </ul>
-                    <strong class="price">₹12<span> / km</span></strong>
-                    <a href="G_Contact">Book Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-          
+            {% endfor %}
+				
            
         </div>
     </div>
@@ -228,75 +142,45 @@ layout: default
 <!--Promo Offer Section End-->
 
 	<!--Client's Feedback Section Start-->
-<section class="tj-reviews">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="tj-heading-style">
-						<h3>Client's Feedback</h3>
-					</div>
-				</div>
-				<div class="col-md-12 col-sm-12">
-					<!--Client's Feedback Slider Content Start-->
-					<div id="testimonial-slider" class="reviews-slider">
-						<!--Review Item Start-->
-						<div class="review-item">
-							<figure class="img-box">
-								<img src="images/noimage.jpg" alt="" />
-							</figure>
-							<div class="review-info">
-								<strong>Parbat</strong>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<div class="review-quote">
-									<p>Great Service, great driver would recommend and definietely use again</p>
-								</div>
-							</div>
-						</div>
-						<!--Review Item End-->
-						<!--Review Item Start-->
-						<div class="review-item">
-							<figure class="img-box">
-								<img src="images/noimage.jpg" alt="" />
-							</figure>
-							<div class="review-info">
-								<strong>Amin Sati</strong>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<div class="review-quote">
-									<p>Service is very good! Thanks</p>
-								</div>
-							</div>
-						</div>
-						<!--Review Item End-->
-						<!--Review Item Start-->
-						<div class="review-item">
-							<figure class="img-box">
-								<img src="images/noimage.jpg" alt="" />
-							</figure>
-							<div class="review-info">
-								<strong>Anthony</strong>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<span class="icon-star-empty icomoon rating"></span>
-								<div class="review-quote">
-									<p>Car is nice! Driver is very helpful! Awesome Taxi Service Thanks!! Gatrar Krupa</p>
-								</div>
-							</div>
-						</div>
-						<!--Review Item End-->
-					</div>
-					<!--Client's Feedback Slider Content End-->
-				</div>	
-			</div>
-		</div>
-</section>
-	<!--Client's Feedback Section End-->
+    <section class="tj-reviews">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-12">
+                    <div class="tj-heading-style">
+                        <h3>Client's Feedback</h3>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 col-sm-12">
+                    <!--Client's Feedback Slider Content Start-->
+                    <div id="testimonial-slider" class="reviews-slider">
+                        {% for image in site.data.gallery.feed %}
+                        <!--Review Item Start-->
+                        <div class="review-item">
+                            <figure class="img-box">
+                                <img src="{{ image.image_path }}" alt="" />
+                            </figure>
+                            <div class="review-info">
+                                <strong>{{ image.image_title }}</strong>
+                                <span class="icon-star-empty icomoon rating"></span>
+                                <span class="icon-star-empty icomoon rating"></span>
+                                <span class="icon-star-empty icomoon rating"></span>
+                                <span class="icon-star-empty icomoon rating"></span>
+                                <span class="icon-star-empty icomoon rating"></span>
+                                
+                                <div class="review-quote">
+                                    <p>{{ image.image_desc }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                </div>	
+                
+            </div>
+        </div>
+    </section>
+    <!--Client's Feedback Section End-->
+    

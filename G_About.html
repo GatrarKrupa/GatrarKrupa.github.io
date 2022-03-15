@@ -1,26 +1,18 @@
 --- 
-layout: default
+layout: page
+title: About Us
+images:
+- image_path:  images/noimage.jpg
+  image_title: Parbat
+  image_desc: Great Service, great driver would recommend and definietely use again
+- image_path:  images/noimage.jpg
+  image_title: Amin Sati
+  image_desc: Service is very good! Thanks
+- image_path:  images/noimage.jpg
+  image_title: Anthony
+  image_desc: Car is nice! Driver is very helpful! Awesome Taxi Service Thanks!! Gatrar Krupa
 --- 
 
-<!--Inner Banner Section Start-->
-	    	<div class="tj-inner-banner">
-	    		<div class="container">
-	    			<h2>About Us</h2>
-	    		</div>
-	    	</div>
-			<!--Inner Banner Section End-->
-			
-			<!--Breadcrumb Section Start-->
-	    	<div class="tj-breadcrumb">
-				<div class="container">
-					<ul class="breadcrumb-list">
-						<li><a href="index.html">Home</a></li>
-						<li class="active">About Us</li>
-					</ul>
-				</div>
-	    	</div>
-			<!--Breadcrumb Section End-->
-			
 			<!--Welcome Section Content Start-->
 <section class="tj-welcome">
     <div class="container">
@@ -68,21 +60,24 @@ layout: default
 			<section class="tj-reviews">
 				<div class="container">
 					<div class="row">
+						
 						<div class="col-md-12">
 							<div class="tj-heading-style">
 								<h3>Client's Feedback</h3>
 							</div>
 						</div>
+						
 						<div class="col-md-12 col-sm-12">
 							<!--Client's Feedback Slider Content Start-->
 							<div id="testimonial-slider" class="reviews-slider">
+                                {% for image in page.images %} 
 								<!--Review Item Start-->
 								<div class="review-item">
 									<figure class="img-box">
-										<img src="images/noimage.jpg" alt="" />
+										<img src="{{ image.image_path }}" alt="" />
 									</figure>
 									<div class="review-info">
-										<strong>Parbat</strong>
+										<strong>{{ image.image_title }}</strong>
 										<span class="icon-star-empty icomoon rating"></span>
 										<span class="icon-star-empty icomoon rating"></span>
 										<span class="icon-star-empty icomoon rating"></span>
@@ -90,52 +85,15 @@ layout: default
 										<span class="icon-star-empty icomoon rating"></span>
 										
 										<div class="review-quote">
-											<p>Great Service, great driver would recommend and definietely use again</p>
+											<p>{{ image.image_desc }}</p>
 										</div>
 									</div>
 								</div>
-								<!--Review Item End-->
-								<!--Review Item Start-->
-								<div class="review-item">
-									<figure class="img-box">
-										<img src="images/noimage.jpg" alt="" />
-									</figure>
-									<div class="review-info">
-										<strong>Amin Sati</strong>
-										<span class="icon-star-empty icomoon rating"></span>
-										<span class="icon-star-empty icomoon rating"></span>
-										<span class="icon-star-empty icomoon rating"></span>
-										<span class="icon-star-empty icomoon rating"></span>
-										<span class="icon-star-empty icomoon rating"></span>
-										
-										<div class="review-quote">
-											<p>Service is very good! Thanks</p>
-										</div>
-									</div>
-								</div>
-								<!--Review Item End-->
-								<!--Review Item Start-->
-								<div class="review-item">
-									<figure class="img-box">
-										<img src="images/noimage.jpg" alt="" />
-									</figure>
-									<div class="review-info">
-										<strong>Anthony</strong>
-										<span class="icon-star-empty icomoon rating"></span>
-										<span class="icon-star-empty icomoon rating"></span>
-										<span class="icon-star-empty icomoon rating"></span>
-										<span class="icon-star-empty icomoon rating"></span>
-										<span class="icon-star-empty icomoon rating"></span>
-										
-										<div class="review-quote">
-											<p>Car is nice! Driver is very helpful! Awesome Taxi Service Thanks!! Gatrar Krupa</p>
-										</div>
-									</div>
-								</div>
-								<!--Review Item End-->
+                                {% endfor %}
 							</div>
-							<!--Client's Feedback Slider Content End-->
+							
 						</div>	
+						
 					</div>
 				</div>
 			</section>
