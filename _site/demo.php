@@ -262,7 +262,7 @@
 						<div class="col-md-12 col-sm-12">
 							<div class="tj-heading-style">
 								<h3>Cab Collections</h3>
-								<p>Lorem Ipsum passages, and more recently with desktop publishing software like aldus pageMaker including versions.</p>
+								
 							</div>
 						</div>
 						<div class="cab-col-outer">
@@ -727,7 +727,7 @@
 						<div class="col-md-12 col-sm-12">
 							<div class="tj-heading-style">
 								<h3>Latest News</h3>
-								<p>Lorem Ipsum passages, and more recently with desktop publishing software like aldus pageMaker including versions.</p>
+								
 							</div>
 						</div>
 						<!--Newsbox Content Start-->
