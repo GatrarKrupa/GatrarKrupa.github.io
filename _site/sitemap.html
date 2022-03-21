@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Prime Cab HTML5 Responsive Template">
+        <meta name="description" content="Gatrar Krupa Taxi Service Porbandar">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Gatrar Krupa Taxi Service Porbandar</title>
 
